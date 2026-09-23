@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung – n8n Automation</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 640px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; }
+    a { color: #2563eb; }
+    footer { margin-top: 40px; font-size: 0.85rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Datenschutzerklärung</h1>
+  <p>Stand: <span id="date"></span></p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Diese Anwendung ist ein privates, nicht-kommerzielles Automatisierungsprojekt.
+    Verantwortlich für die Datenverarbeitung ist der Projektinhaber, erreichbar unter:
+    daniel.blessing.bc@googlemail.com
+  </p>
+
+  <h2>2. Zweck der Anwendung</h2>
+  <p>
+    Die Anwendung verbindet über die offizielle Google-OAuth-Schnittstelle
+    ausgewählte Google-Dienste (z. B. Google Sheets, Google Calendar, Google Docs,
+    Google Drive) mit einer selbst gehosteten n8n-Automatisierungsplattform.
+    Sie dient ausschließlich der privaten Nutzung durch den Projektinhaber selbst.
+  </p>
+
+  <h2>3. Verarbeitete Daten</h2>
+  <p>
+    Es werden ausschließlich Daten verarbeitet, auf die im Rahmen der erteilten
+    Google-OAuth-Berechtigungen zugegriffen wird (z. B. Tabelleninhalte,
+    Kalendereinträge oder Dokumente). Diese Daten werden nicht an Dritte
+    weitergegeben und nicht zu Werbezwecken genutzt.
+  </p>
+
+  <h2>4. Speicherung</h2>
+  <p>
+    Zugriffstoken werden ausschließlich auf der selbst gehosteten n8n-Instanz
+    des Projektinhabers gespeichert und nicht extern geteilt.
+  </p>
+
+  <h2>5. Widerruf</h2>
+  <p>
+    Der Zugriff kann jederzeit über die
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">
+      Google-Kontoeinstellungen
+    </a>
+    widerrufen werden.
+  </p>
+
+  <h2>6. Kontakt</h2>
+  <p>Fragen zum Datenschutz richten Sie bitte an: daniel.blessing.bc@googlemail.com</p>
+
+  <footer>
+    <a href="index.html">Zurück zur Startseite</a>
+  </footer>
+
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('de-DE');
+  </script>
+</body>
+</html>
